@@ -1,9 +1,114 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Website</title>
-  </head>
-  <body>
-    <h1>Hello, World! Welcome to my website.</h1>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity & Impact Alliance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <span>🚀 Join our Q3 Global Donor & Volunteer Summit on July 28th!</span> 
+        <a href="#donate">Support Our Mission &rarr;</a>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo-container">
+            <div class="logo-icon">🌐</div>
+            <div>
+                <strong>Unity & Impact Alliance</strong>
+                <small>Community Organization & Impact Hub</small>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#messages">Messages & News</a>
+            <a href="#documents">Document Archive</a>
+            <a href="#gallery">Impact Gallery</a>
+            <a href="#volunteer">Volunteer</a>
+            <a href="#about">About Us</a>
+        </nav>
+        <a href="#donate" class="donate-btn">♥ Donate Now</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <span class="badge">✨ Empowering Lives Since 2016</span>
+            <h1>Building Brighter Futures, <span class="green-text">Together.</span></h1>
+            <p>Empowering communities, driving sustainable change, and uniting compassionate donors worldwide.</p>
+            <div class="hero-buttons">
+                <a href="#donate" class="btn-primary">♥ Support Our Mission</a>
+                <a href="#messages" class="btn-secondary">Read Our Messages &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secure Donor Portal / Donate Section -->
+    <section id="donate" class="donor-portal">
+        <div class="portal-header">
+            <span class="sub-badge">SECURE DONOR PORTAL</span>
+            <h2>Empower Change Through Your Support</h2>
+            <p>100% secure processing. Join thousands of dedicated donors sustaining our clean water, education, and health initiatives.</p>
+        </div>
+
+        <div class="portal-grid">
+            <!-- Left Column: Options -->
+            <div class="donation-card">
+                <h3>1. Select Contribution Frequency</h3>
+                <div class="freq-toggle">
+                    <button class="active">Monthly Contribution</button>
+                    <button>One-Time Contribution</button>
+                </div>
+
+                <h3>2. Choose or Enter Amount ($ USD)</h3>
+                <div class="amount-grid">
+                    <button>$25</button>
+                    <button>$50</button>
+                    <button class="selected-amount">$100</button>
+                    <button>$250</button>
+                </div>
+                <input type="text" placeholder="Or enter custom amount ($)" class="custom-input">
+
+                <h3>3. Recommended Impact Tiers</h3>
+                <div class="tiers-grid">
+                    <div class="tier-box">
+                        <h4>Ally of Hope <span class="price-tag">$25</span></h4>
+                        <p>Provides school supplies and nutritional meals for 3 children for a month.</p>
+                    </div>
+                    <div class="tier-box selected-tier">
+                        <h4>Community Builder <span class="price-tag">$100</span></h4>
+                        <p>Funds clean drinking water filtration kits for an entire family unit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Form -->
+            <div class="donor-details-card">
+                <h3>Donor Details</h3>
+                <label>Full Name</label>
+                <input type="text" placeholder="Jane Doe">
+
+                <label>Email Address</label>
+                <input type="email" placeholder="jane@example.com">
+
+                <div class="tax-info">
+                    <p><strong>Contribution Summary:</strong> Direct Impact Fund</p>
+                    <p><strong>Tax Deductibility status:</strong> Verified 501(c)(3) equivalent</p>
+                </div>
+
+                <button class="complete-btn">♥ Complete $100 Contribution</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Unity & Impact Alliance. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
